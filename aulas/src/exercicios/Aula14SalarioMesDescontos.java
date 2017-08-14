@@ -36,8 +36,8 @@ public class Aula14SalarioMesDescontos {
 		double inss = (salarioMes * 8 / 100);
 		double sind = (salarioMes * 5 / 100);
 		
-		double descontos = (impRenda + inss + sind);
-		double salarioLiquido = (salarioMes - descontos);
+		double descontos = impRenda + inss + sind;
+		double salarioLiquido = salarioMes - descontos;
 		
 		System.out.println("Desconto IR de 11%: " + impRenda);
 		System.out.println("Desconto INSS de 8%: " + inss);

@@ -18,8 +18,8 @@ public class Aula07AreaQuadrado {
 		System.out.println("Digite o lado do quadrado: ");
 		double lado = scan.nextDouble();
 		
-		double areaquadrado = (double) (lado * lado);
-		double dobro = (double) (areaquadrado * 2);
+		double areaquadrado = Math.pow (lado, 2);
+		double dobro = (areaquadrado * 2);
 		
 		System.out.println("A área do quadrado é: " + areaquadrado);
 		System.out.println("o dobro da área é: " + dobro);
